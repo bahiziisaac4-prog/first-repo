@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="King David Academy — quality education in Rwanda. Admissions, news, events, and contact information." />
+  <meta name="keywords" content="King David Academy, school Rwanda, admissions, education, primary school, secondary school" />
+  <title>King David Academy</title>
+
+  <!-- Google Fonts (optional, remove if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph for sharing -->
+  <meta property="og:title" content="King David Academy" />
+  <meta property="og:description" content="King David Academy — news, events, and admissions information." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo-placeholder.png" alt="King David Academy logo" class="logo" />
+        <div>
+          <h1 class="site-title">King David Academy</h1>
+          <p class="site-tagline">Learning, Leadership, and Community</p>
+        </div>
+      </div>
+
+      <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="main-content" role="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Welcome to King David Academy</h2>
+          <p>Quality education that prepares young leaders for tomorrow.</p>
+          <a href="#admissions" class="btn-primary">Apply Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-placeholder.jpg" alt="Students at King David Academy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick News / Announcements -->
+    <section id="news" class="section news-section container">
+      <h3>Latest News</h3>
+      <ul class="news-list">
+        <li><time datetime="2025-10-01">Oct 1, 2025</time> — Term 3 results published. <a href="#">Read more</a></li>
+        <li><time datetime="2025-09-15">Sep 15, 2025</time> — Science fair winners announced. <a href="#">Read more</a></li>
+      </ul>
+    </section>
+
+    <!-- Academics overview -->
+    <section id="academics" class="section container academics">
+      <h3>Academics</h3>
+      <div class="grid-3">
+        <article>
+          <h4>Primary</h4>
+          <p>Focused curriculum to build strong foundations in literacy and numeracy.</p>
+        </article>
+        <article>
+          <h4>Secondary</h4>
+          <p>Preparation for national exams and career guidance.</p>
+        </article>
+        <article>
+          <h4>Extracurricular</h4>
+          <p>Sports, clubs, and arts to support holistic development.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery with slider -->
+    <section id="gallery" class="section gallery container">
+      <h3>Gallery</h3>
+      <div class="gallery-slider" aria-roledescription="carousel" aria-label="Event photos">
+        <button class="g-prev" aria-label="Previous image">‹</button>
+        <div class="g-track">
+          <!-- Replace src with your images -->
+          <figure class="g-item"><img src="assets/gallery1.jpg" alt="School assembly" /></figure>
+          <figure class="g-item"><img src="assets/gallery2.jpg" alt="Science fair" /></figure>
+          <figure class="g-item"><img src="assets/gallery3.jpg" alt="Football team" /></figure>
+        </div>
+        <button class="g-next" aria-label="Next image">›</button>
+      </div>
+    </section>
+
+    <!-- Admissions -->
+    <section id="admissions" class="section container admissions">
+      <h3>Admissions</h3>
+      <p>Learn about our application process and requirements. We accept applications for ages 6–18.</p>
+      <ol>
+        <li>Download application form</li>
+        <li>Submit documents to admissions office</li>
+        <li>Interview (if required)</li>
+      </ol>
+      <a href="#contact" class="btn-secondary">Contact admissions</a>
+    </section>
+
+    <!-- Contact / Form -->
+    <section id="contact" class="section container contact-section" aria-labelledby="contactHeading">
+      <h3 id="contactHeading">Contact Us</h3>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h4>School Office</h4>
+          <p>King David Academy<br/> Kigali, Rwanda</p>
+          <p>Email: <a href="mailto:info@kda.rw">info@kda.rw</a></p>
+          <p>Phone: <a href="tel:+250123456789">+250 123 456 789</a></p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" required aria-required="true" placeholder="Your full name">
+
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" required aria-required="true" placeholder="you@example.com">
+
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Write your message here"></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Send Message</button>
+            <button type="reset" class="btn-ghost">Reset</button>
+          </div>
+
+          <div id="formFeedback" role="status" aria-live="polite" class="form-feedback" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav aria-label="Footer Navigation">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; <span id="year"></span> King David Academy — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
